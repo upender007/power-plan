@@ -1,0 +1,22 @@
+[
+    {
+        "id":"1",
+        "value":"Basic Power Plan"
+    },
+    {
+        "id":"2",
+        "value":"Basic + Power Plan"
+    },
+    {
+        "id":"3",
+        "value":"Advance Power Plan"
+    },
+    {
+        "id":"4",
+        "value":"Premium Power Plan"
+    },
+    {
+        "id":"5",
+        "value":"Premium + Luxury Power Plan"
+    }
+]
