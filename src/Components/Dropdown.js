@@ -1,112 +1,19 @@
 import React from "react";
-export default function Dropdown({width,allValues,selectedValue}) {
-
+export default function Dropdown({ width, allValues, selectedValue }) {
   return (
     <div className="dropdown-container ">
-      
-      <select name="power-plan" id="dropdown" defaultValue={selectedValue} style={{width:width}}>
+      <select
+        name="power-plan"
+        id="dropdown"
+        defaultValue={selectedValue}
+        style={{ width: width }}
+      >
         {allValues &&
           allValues.map((item, index) => (
             <option key={index} value={item.value}>
               {item.value}
             </option>
           ))}
-                      <option>
-           1
-            </option>
-            <option>
-           1
-            </option>
-            <option>
-           1
-            </option>
-            <option>
-           1
-            </option>
-            <option>
-           1
-            </option>
-            <option>
-           1
-            </option>
-            <option>
-           1
-            </option>
-            <option>
-           1
-            </option>
-            <option>
-           1
-            </option>
-            <option>
-           1
-            </option>
-            <option>
-           1
-            </option>
-            <option>
-           1
-            </option>
-            <option>
-           1
-            </option>
-            <option>
-           1
-            </option>
-            <option>
-           1
-            </option>
-            <option>
-           1
-            </option>
-            <option>
-           1
-            </option>
-            <option>
-           1
-            </option>
-            <option>
-           1
-            </option>
-            <option>
-           1
-            </option>
-            <option>
-           1
-            </option>
-            <option>
-           1
-            </option>
-            <option>
-           1
-            </option>
-            <option>
-           1
-            </option>
-            <option>
-           1
-            </option>
-            <option>
-           1
-            </option>
-            <option>
-           1
-            </option>
-            <option>
-           1
-            </option>
-            <option>
-           1
-            </option>
-            <option>
-           1
-            </option>
-            <option>
-           1
-            </option>
-            <option>
-           1
-            </option>
       </select>
     </div>
   );
