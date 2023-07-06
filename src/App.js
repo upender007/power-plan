@@ -1,26 +1,20 @@
-<<<<<<< HEAD
-import logo from './logo.svg';
-import './App.css';
-import Body from './Components/Body';
-function App() {
-  return (
-    <>
-       <Body/>
-    </>
-=======
 import './DropDown.css';
 import Dropdown from './Components/Dropdown';
-
+import logo from './logo.svg';
+import './App.scss';
+import PowerPlanRegisterUser from "../src/Components/PowerPlanRegisterUser"
 function App() {
   return (
     <div className="App">
-      <div className='inner-div'>
+        <>
+           <PowerPlanRegisterUser/>
+        </>
+      {/* <div className='inner-div'>
         <Dropdown></Dropdown>
 
-      </div>
+      </div> */}
      
     </div>
->>>>>>> main
   );
 }
 
