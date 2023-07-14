@@ -1,19 +1,16 @@
 import './DropDown.css';
-import Dropdown from './Components/Dropdown';
-import logo from './logo.svg';
+import mockServer from './__mocks__/mockServers';
 import './App.scss';
-import PowerPlanRegisterUser from "../src/Components/PowerPlanRegisterUser"
+import PowerPlanRegisterUser from "./containers/PowerPlanRegisterUser"
+
+mockServer();
+
 function App() {
   return (
     <div className="App">
         <>
            <PowerPlanRegisterUser/>
-        </>
-      {/* <div className='inner-div'>
-        <Dropdown></Dropdown>
-
-      </div> */}
-     
+        </> 
     </div>
   );
 }
