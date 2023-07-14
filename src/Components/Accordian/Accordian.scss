@@ -1,0 +1,13 @@
+.accordian-parent{
+    // border: 2px solid green;
+    box-sizing: border-box;
+}
+
+.accordian-child{
+   background-color: lightblue;
+   border-radius: 5px;
+}
+.accordian-question{
+    display: flex;
+    justify-content: space-between;
+}
