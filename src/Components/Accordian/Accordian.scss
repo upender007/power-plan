@@ -6,8 +6,16 @@
 .accordian-child{
    background-color: lightblue;
    border-radius: 5px;
+   color: black;
+   margin-bottom: 2px;
 }
 .accordian-question{
     display: flex;
     justify-content: space-between;
+}
+.accordian-answer{
+    margin: 0px;
+}
+.open-close:hover{
+    cursor: pointer;
 }
