@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-import CardComponent from "../components/CardComponent";
-import Accordion from "../components/Accordion";
+import CardComponent from "../Components/CardComponent";
+import Accordion from "../Components/Accordion";
 
 export default function PowerPlanRegisterUser(props){
     const {localization} = props;
