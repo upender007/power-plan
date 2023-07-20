@@ -1,4 +1,4 @@
-import './DropDown.css';
+import './Components/Dropdown/DropDown.scss';
 import mockServer from './__mocks__/mockServers';
 import * as de from './localization/de-DE';
 import * as en from './localization/en-GB';
@@ -9,7 +9,6 @@ mockServer();
 
 function App() {
   const currentLocale = localStorage.getItem('locale');
-  console.log(en.AccordianData)
   let localization = {};
   if (currentLocale === 'de') {
     localization = de;
