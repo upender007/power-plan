@@ -14,7 +14,6 @@ export default function Accordian(props){
     }
     return(
         <div className="accordian-parent">
-              <h2>Accordian</h2>
               {
                 AccordianData.map((value,index)=>(
                     <div className="accordian-child" key={index}>

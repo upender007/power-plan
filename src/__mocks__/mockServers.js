@@ -15,6 +15,13 @@ export default function mockServer() {
                     ]
                 }
             }, { timing: 400 })
+            this.get("/api/selectedPlan", () => {
+                return {
+
+                        plan:{ id: "PWDASV-DUSV",name: "Day saver"}
+                        
+                }
+            }, { timing: 400 })
     
             this.post("/api/username", (schema, request) => {
                 let name = JSON.parse(request.requestBody).name
