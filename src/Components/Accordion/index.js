@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import "./Accordian.scss";
-import { AccordianData } from "./AccordianData";
+import "./style.scss";
+import { AccordianData } from "../../localization/de-DE/accordion";
 
-export default function Accordian(){
-
+export default function Accordian(props){
+    const { data } = props.data;
     const [indexes, setIndexes] = useState([])
     function handler(index){
          if(indexes.includes(index)){
@@ -14,7 +14,6 @@ export default function Accordian(){
     }
     return(
         <div className="accordian-parent">
-              <h2>Accordian</h2>
               {
                 AccordianData.map((value,index)=>(
                     <div className="accordian-child" key={index}>

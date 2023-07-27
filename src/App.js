@@ -1,19 +1,25 @@
-import './DropDown.css';
-import Dropdown from './Components/Dropdown';
-import logo from './logo.svg';
+import './Components/Dropdown/DropDown.scss';
+import mockServer from './__mocks__/mockServers';
+import * as de from './localization/de-DE';
+import * as en from './localization/en-GB';
 import './App.scss';
-import PowerPlanRegisterUser from "../src/Components/PowerPlanRegisterUser"
+import PowerPlanRegisterUser from "./containers/PowerPlanRegisterUser"
+
+mockServer();
+
 function App() {
+  const currentLocale = localStorage.getItem('locale');
+  let localization = {};
+  if (currentLocale === 'de') {
+    localization = de;
+  } else {
+    localization = en;
+  }
   return (
     <div className="App">
-        <>
-           <PowerPlanRegisterUser/>
-        </>
-      {/* <div className='inner-div'>
-        <Dropdown></Dropdown>
-
-      </div> */}
-     
+      <>
+        <PowerPlanRegisterUser localization={localization} />
+      </>
     </div>
   );
 }
