@@ -1,9 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
+import { MyContext } from "../../MyContext";
 import "./style.scss";
 import { AccordianData } from "../../localization/de-DE/accordion";
 
 export default function Accordian(props){
     const { data } = props.data;
+    const { name } = useContext(MyContext);
+    console.log('name', name);
     const [indexes, setIndexes] = useState([])
     function handler(index){
          if(indexes.includes(index)){
