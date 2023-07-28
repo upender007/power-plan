@@ -1,5 +1,5 @@
 import React from "react";
-import "../Assets/Styles/style.scss";
+import "../assets/Styles/style.scss";
 export default function CardComponent({className, children}){
     return(
         <div className="parent-box">

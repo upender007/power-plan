@@ -1,4 +1,4 @@
-import './Components/Dropdown/DropDown.scss';
+import './components/Dropdown/style.scss';
 import mockServer from './__mocks__/mockServers';
 import * as de from './localization/de-DE';
 import * as en from './localization/en-GB';

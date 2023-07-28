@@ -1,11 +1,7 @@
-
-import React, { useEffect } from "react";
-
 import React, { useEffect, useState } from "react";
-import Dropdown from "../Components/Dropdown/Dropdown";
-
-import CardComponent from "../Components/CardComponent";
-import Accordion from "../Components/Accordion";
+import Dropdown from "../components/Dropdown";
+import CardComponent from "../components/CardComponent";
+import Accordion from "../components/Accordion";
 
 export default function PowerPlanRegisterUser(props) {
   const { localization } = props;
