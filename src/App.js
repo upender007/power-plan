@@ -1,4 +1,5 @@
 import './Components/Dropdown/DropDown.scss';
+import './Components/InputField/InputField.scss';
 import mockServer from './__mocks__/mockServers';
 import * as de from './localization/de-DE';
 import * as en from './localization/en-GB';
