@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Dropdown from "../Components/Dropdown/Dropdown";
-
+import debounce from 'lodash.debounce';
 import CardComponent from "../Components/CardComponent";
 import Accordion from "../Components/Accordion";
 import InputField from "../Components/InputField/InputField";
@@ -11,11 +11,12 @@ export default function PowerPlanRegisterUser(props) {
   const [helperText, setHelperText] = useState("helper");
   const [userName, setUserName] = useState("");
   const [selectedPlan, setSelectedPlan] = useState({});
-  const changeHandler=(e)=>{
+  
+  const changeHandler=debounce((value)=>{
+   setUserName(value)
+  },1000)
 
-    setUserName(e.target.value)
-    console.log("username:"+ userName)
-  }
+  
     useEffect(()=>{
       fetch('/api/username',{
           method: 'POST',

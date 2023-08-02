@@ -9,7 +9,7 @@ export default function InputField({ label, name, width, type, id,height,helperT
         <label for={id}>{label}</label>
       </div>
       <div className="inputBox-container">
-        <input type={type} id={id} name={name} style={{ width: width,height:height}} onChange={changeHandler}></input>
+        <input type={type} id={id} name={name} style={{ width: width,height:height}} onChange={(e)=>changeHandler(e.target.value)}></input>
       </div>
       <div className="label-container">{helperText}</div>
     </div>
