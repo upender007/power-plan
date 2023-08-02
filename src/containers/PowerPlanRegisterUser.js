@@ -3,6 +3,8 @@ import Dropdown from "../Components/Dropdown/Dropdown";
 import debounce from 'lodash.debounce';
 import CardComponent from "../Components/CardComponent";
 import Accordion from "../Components/Accordion";
+import Checkbox from "../Components/Checkbox/Checkbox";
+import Overlay from "../Components/Overlay/Overlay";
 import InputField from "../Components/InputField/InputField";
 
 export default function PowerPlanRegisterUser(props) {
@@ -37,6 +39,9 @@ export default function PowerPlanRegisterUser(props) {
       .then((json) => setSelectedPlan(json.plan));
   }, []);
 
+ const [overlays, setOverlays] = useState(false);
+
+
 
   return (
     <>
@@ -59,9 +64,13 @@ export default function PowerPlanRegisterUser(props) {
               changeHandler={changeHandler}
             ></InputField>
           </form>
+          <Checkbox ol = {setOverlays}/>
           <Accordion data={localization.AccordianData} />
         </CardComponent>
       )}
+      {
+        overlays && <Overlay ol = {setOverlays}/>
+      }
     </>
   );
 }
