@@ -1,6 +1,5 @@
 import React from "react";
 export default function Dropdown({ width, plans, selectedPlan }) {
-  console.log(selectedPlan);
   return (
     <div className="dropdown-container ">
       <select
